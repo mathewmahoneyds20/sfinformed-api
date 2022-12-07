@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../styles.css" />
         <link
       href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
       rel="stylesheet"
@@ -13,12 +13,12 @@
     </head>
     <body>
         <header>
-            <a href=""><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href=#home><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
         </header>
         <div class="navbar">
             <nav>
-                <a href="" onclick="route()">Home</a>
-                <a href="./pages/news.html" onclick="route()">News</a>
+                <a href="../index.html" onclick="route()">Home</a>
+                <a href="./pages/news" onclick="route()">News</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
@@ -29,7 +29,7 @@
                         <a href="/econ" onclick="route()">Economy & Community</a>
                         <a href="/city-mgmt" onclick="route()">City Management& Ethics</a>
                         <a href="transport" onclick="route()">Transportation</a>
-                        <a href="pages/pub-safe.html" onclick="route()">Public Safety</a>
+                        <a href="pub-safe" onclick="route()">Public Safety</a>
                         <a href="hss" onclick="route()">Health & Social Services</a>
                         <a href="geog" onclick="route()">Geographic Locations & Boundaries</a>
                         <a href="nrg" onclick="route()">Energy & Environment</a>
@@ -44,9 +44,29 @@
         <script src="js/router.js"></script>
         <container>
  <div class="wrapper">
-            <h1>WELCOME TO SF/INFORMED</h1>
+            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
             <container>
-            
+            <form class="form">
+                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <input
+                    id="number-of-complaints"
+                    name="number-of-complaints"
+                    type="number"
+                    class="number-of-complaints"
+                    placeholder="# OF INCIDENTS"
+                />
+                </container>
+                <br/>
+                <h3>Incident Category</h3>
+                <br/>
+                <button>Lost Property</button>
+                <button>Burglary</button>
+                <button>Missing Person</button>
+                <button>Larceny Theft</button>
+                <button>Drug Offense</button>
+            </form>
+            <ul class="complaints-list"></ul>
+        </div>
         </container>
         <script src="script.js"></script>
        

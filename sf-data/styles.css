@@ -21,6 +21,11 @@ h3 {
     text-align: center;
 }
 
+div.dropdown button.dropbtn {
+    color: orange;
+    font-style: italic;
+}
+
 .wrapper {
     margin-left: auto;
     margin-right: auto;
